@@ -1,0 +1,22 @@
+<ion-view view-title="Dashboard">
+  <ion-content class="padding">
+    <h2>Area of Square</h2>
+    <form>
+      <div class="list list-inset">
+        <label class="item item-input">
+          <input type="text" placeholder="Enter Side of a Square" ng-model="side">
+        </label>
+      </div>
+      <button ng-click="calcSquare(side)" class="button button-block button-assertive">Calculate</button>
+        <div class="list list-inset">
+            <h4>Send Results via SMS</h4>
+        <label class="item item-input">
+            
+          <input type="text" placeholder="Phone Number" ng-model="phone">
+        </label>
+      </div>
+        <button ng-click="sendSMS(phone)" class="button button-block button-calm">Send Result to {{phone}}</button>
+    </form>
+          <h1 class="title">{{areaSquare}}</h1>
+  </ion-content>
+</ion-view>

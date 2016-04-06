@@ -1,0 +1,16 @@
+<ion-view view-title="Area of Rectagle">
+  <ion-content class="padding">
+    <form>
+      <div class="list list-inset">
+        <label class="item item-input">
+          <input type="text" placeholder="Enter Length" ng-model="length">
+        </label>
+        <label class="item item-input">
+          <input type="text" placeholder="Enter Breadth" ng-model="breadth">
+        </label>
+      </div>
+      <button ng-click="calcRec(length, breadth)" class="button button-block">Calculate</button>
+    </form>
+          <h1 class="title">{{areaRec}}</h1>
+  </ion-content>
+</ion-view>

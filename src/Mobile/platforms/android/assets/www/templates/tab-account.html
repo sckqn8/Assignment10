@@ -1,0 +1,13 @@
+<ion-view view-title="Pounds to KGS">
+  <ion-content class="padding">
+    <form>
+      <div class="list list-inset">
+        <label class="item item-input">
+          <input type="text" placeholder="Enter value in Pounds" ng-model="pounds">
+        </label>
+      </div>
+      <button ng-click="calcKgs(pounds)" class="button button-block button-assertive">Calculate</button>
+    </form>
+          <h1 class="title">{{kgsResult}}</h1>
+  </ion-content>
+</ion-view>
